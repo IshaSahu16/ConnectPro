@@ -694,7 +694,16 @@ a {
 /* ------------------------------------------------network-page-end------------------------------------------ */
 
 /* ------------------------------------------media query for navbar-------------------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1414px){
+    .main-content-network{
+        width: 23rem;
+    }
+    .network-list-1 {
+        grid-template-columns: repeat(3, minmax(132px, 1fr));
+    }
+
+}
+@media only screen and (max-width: 1000px) {
     .search-box {
         background: transparent;
         width: auto;

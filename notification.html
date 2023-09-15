@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <!-- -----------------google fonts link-------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- -------------custom css------------------ -->
+    <link rel="stylesheet" href="./notification.css">
+    <!-- ------------------favicon------------------- -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="./index.html"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="./network.html"><img src="./images/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="./job.html"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="./messaging.html"><img src="./images/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="#" class="active-link"><img src="./images/notification.png"
+                            alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-3.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -----------profile-drop-down-menu----------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h3>Isha Sahu</h3>
+                        <a href="./profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------------navbar end----------------- -->
+
+    <div class="container">
+        <!-- -----------left-sidebar----------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box" id="sidebar-notifi">
+                <h2>Manage your Notifications</h2>
+                <h3>View Settings</h3>
+            </div>
+        </div>
+
+        <!-- -----------main-content----------- -->
+        <div class="main-content">
+            <div class="notifi-links">
+                <a href="#" class="first-link">All</a>
+                <a href="#" class="second-link">My Post</a>
+                <a href="#" class="second-link">Mentions</a>
+            </div>
+
+            <div class="notifi-boxes">
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>Yash Saxena viewed your profile. See all views. <br> <span>2h ago</span></h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>Nikhil Yadav commented on Sakshi Jain's post: Watched Think School..🌺<br> <span>3h ago</span>
+                    </h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>graphic designer: 23 opportunities in Bhopal. <br> <span>7h ago</span></h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>2356 people are attending an event created by LinkedIn this week.
+                        <br> <span>11h ago</span>
+                    </h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>Reach out to your recent connection: Leela Sharma <br> <span>16h ago</span></h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>70 people viewed your profile in last 100 days. <br> <span>1d ago</span></h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>Pari created a poll: What do you think is the most popular...?<br> <span>12d ago</span></h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>Smita Shukla viewed your profile. See all views. <br> <span>12d ago</span></h3>
+                </div>
+                <hr>
+                <div class="notifi-msg">
+                    <img src="./images/user-4.png" alt="">
+                    <h3>Your posts got 412 impressions last week. View analytics for your top post.<br> <span>2h ago</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------right-sidebar---------- -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web designing</p>
+                <div>
+                    <img src="./images/user-1.png">
+                    <img src="./images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="./images/logo.png">
+                    <p>Linkedin &#169; 2022. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------custom javascript---------------- -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

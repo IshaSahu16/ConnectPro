@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <!-- -----------------google fonts link-------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- ---------------font awesome--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -------------custom css------------------ -->
+    <link rel="stylesheet" href="./network.css">
+    <!-- ------------------favicon------------------- -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="./index.html"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="#" class="active-link"><img src="./images/network.png" alt=""><span>My Network</span></a>
+                </li>
+                <li><a href="./job.html"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="./messaging.html"><img src="./images/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="./notification.html"><img src="./images/notification.png"
+                            alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-3.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -----------profile-drop-down-menu----------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h3>Isha Sahu</h3>
+                        <a href="./profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------------navbar end----------------- -->
+
+    <div class="container">
+        <!-- -----------left-sidebar----------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-manage-network">
+                <h2>Manage my Network</h2>
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-user fa-xl"></i>
+                    </div>
+                    <h3>Connections</h3>
+                </div>
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-regular fa-address-book fa-2xl"></i>
+                    </div>
+                    <h3>Contacts</h3>
+                </div>
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-users fa-2xl"></i>
+                    </div>
+                    <h3>Following</h3>
+                </div>
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-user-plus fa-2xl"></i>
+                    </div>
+                    <h3>Groups</h3>
+                </div>
+                <div class="manage-network-link" id="network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-regular fa-calendar-days fa-2xl"></i>
+                    </div>
+                    <h3>Events</h3>
+                </div>
+                <div class="manage-network-link" id="network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-file fa-2xl"></i>
+                    </div>
+                    <h3>Pages</h3>
+                </div>
+                <div class="manage-network-link" id="network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-regular fa-newspaper fa-2xl"></i>
+                    </div>
+                    <h3>Newletter</h3>
+                </div>
+                <div class="manage-network-link" id="network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-hashtag fa-2xl"></i>
+                    </div>
+                    <h3>Hashtags</h3>
+                </div>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad · · ·</small>
+                <p>Master the 5 principles of web designing</p>
+                <div>
+                    <img src="./images/user-1.png">
+                    <img src="./images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+        </div>
+
+        <!-- -----------main-content----------- -->
+        <div class="main-content-network">
+
+            <div class="invitations">
+                <div class="heading-invite">
+                    <h2>Invitations</h2>
+                    <a href="#">See all 100</a>
+                </div>
+
+                <ul class="invite-list">
+                    <li class="invite-card">
+                        <div class="invite-card-container">
+                            <div class="left-side-invite">
+                                <a href="#"><img src="./images/user-1.png" alt=""></a>
+                                <div class="invite-card-details">
+                                    <h2>Ishaan Khare</h2>
+                                    <h3>Attended Indian Institute of Technology, Delhi</h3>
+                                    <i class="fa fa-link"><span>18 mutual connections</span></i>
+                                </div>
+                            </div>
+                            <div class="right-side-invite">
+                                <button class="btn-ignore" onclick="closeInviteCard()">Ignore</button>
+                                <button class="btn-accept" onclick="closeInviteCard()">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="invite-card">
+                        <div class="invite-card-container">
+                            <div class="left-side-invite">
+                                <a href="#"><img src="./images/user-3.png" alt=""></a>
+                                <div class="invite-card-details">
+                                    <h2>Shipa Shukla</h2>
+                                    <h3>Attended Indian Institute of Technology, Bombay</h3>
+                                    <i class="fa fa-link"><span>78 mutual connections</span></i>
+                                </div>
+                            </div>
+                            <div class="right-side-invite">
+                                <button class="btn-ignore">Ignore</button>
+                                <button class="btn-accept">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="invite-card">
+                        <div class="invite-card-container">
+                            <div class="left-side-invite">
+                                <a href="#"><img src="./images/user-4.png" alt=""></a>
+                                <div class="invite-card-details">
+                                    <h2>Akshara Soni</h2>
+                                    <h3>Attended Indian Institute of Technology, Bombay</h3>
+                                    <i class="fa fa-link"><span>18 mutual connections</span></i>
+                                </div>
+                            </div>
+                            <div class="right-side-invite">
+                                <button class="btn-ignore">Ignore</button>
+                                <button class="btn-accept">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="invite-card">
+                        <div class="invite-card-container" id="last-card">
+                            <div class="left-side-invite">
+                                <a href="#"><img src="./images/user-5.png" alt=""></a>
+                                <div class="invite-card-details">
+                                    <h2>Karan Singh</h2>
+                                    <h3>Attended National Institute of Technology, Surat</h3>
+                                    <i class="fa fa-link"><span>67 mutual connections</span></i>
+                                </div>
+                            </div>
+                            <div class="right-side-invite">
+                                <button class="btn-ignore">Ignore</button>
+                                <button class="btn-accept">Accept</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="grow-networks">
+                <ul class="add-network-list">
+                    <li>
+                        <div class="head-network">
+                            <h2>People you may know from UX Design</h2>
+                            <a href="#">See all</a>
+                        </div>
+                        <ul class="network-list-1">
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-4.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Karan Singh</h2>
+                                        <h3>Attended National Institute of Technology, Goa</h3>
+                                        <i class="fa fa-link"><span>67 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-1.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Rajesh Sharma</h2>
+                                        <h3>Attended National Institute of Technology, Surat</h3>
+                                        <i class="fa fa-link"><span>23 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-5.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Priya Patel</h2>
+                                        <h3>Attended National Institute of Technology, Patna</h3>
+                                        <i class="fa fa-link"><span>44 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-2.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Pihu Kapoor</h2>
+                                        <h3>Attended National Institute of Technology, Hamirpur</h3>
+                                        <i class="fa fa-link"><span>55 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-3.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Ram Agarwal</h2>
+                                        <h3>Attended National Institute of Technology, Bhopal</h3>
+                                        <i class="fa fa-link"><span>62 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-1.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Karan Mathew</h2>
+                                        <h3>Attended National Institute of Technology, Bhopal</h3>
+                                        <i class="fa fa-link"><span>47 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-2.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Liza Soni</h2>
+                                        <h3>Attended National Institute of Technology, Bhopal</h3>
+                                        <i class="fa fa-link"><span>02 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="network-card">
+                                <div class="card-details">
+                                    <img src="./images/user-5.png" alt="">
+                                    <div class="card-info">
+                                        <h2>Akshay Mehta</h2>
+                                        <h3>Attended National Institute of Technology, Bhopal</h3>
+                                        <i class="fa fa-link"><span>11 mutual connections</span></i>
+                                        <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                style="color: #1f71ff;"></i>Connect</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="add-network-list">
+                            <li>
+                                <div class="head-network">
+                                    <h2>Software Engineers You May Know</h2>
+                                    <a href="#">See all</a>
+                                </div>
+                                <ul class="network-list-1">
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-4.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Taniya Singhania</h2>
+                                                <h3>Attended LNCT Group Of Colleges</h3>
+                                                <i class="fa fa-link"><span>87 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-3.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Ayushi Mittal</h2>
+                                                <h3>Attended LNCT Group Of Colleges</h3>
+                                                <i class="fa fa-link"><span>89 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-1.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Anushka Dixit</h2>
+                                                <h3>Attended LNCT Group Of Colleges</h3>
+                                                <i class="fa fa-link"><span>99 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-3.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Ansh Malviya</h2>
+                                                <h3>Attended LNCT Group Of Colleges</h3>
+                                                <i class="fa fa-link"><span>54 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-5.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Abhinav Singhal</h2>
+                                                <h3>Attended National Institute of Technology, Surat</h3>
+                                                <i class="fa fa-link"><span>76 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-4.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Vimi Behl</h2>
+                                                <h3>Attended National Institute of Technology, Surathkal</h3>
+                                                <i class="fa fa-link"><span>45 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-2.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Rohan Randhawa</h2>
+                                                <h3>Attended National Institute of Technology, Allahabad</h3>
+                                                <i class="fa fa-link"><span>33 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-1.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Manu Chandel</h2>
+                                                <h3>Attended National Institute of Technology, Calicut</h3>
+                                                <i class="fa fa-link"><span>62 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                        <ul class="add-network-list">
+                            <li>
+                                <div class="head-network">
+                                    <h2>People you may know from Microsoft Learn Student Ambassadors</h2>
+                                    <a href="#">See all</a>
+                                </div>
+                                <ul class="network-list-1">
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-5.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Vikas Bansal</h2>
+                                                <h3>Attended National Institute of Technology, Hamirpur</h3>
+                                                <i class="fa fa-link"><span>32 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-4.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Neha Tiwari</h2>
+                                                <h3>Attended National Institute of Technology, Warangal</h3>
+                                                <i class="fa fa-link"><span>97 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-3.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Smita Tyagi</h2>
+                                                <h3>Attended National Institute of Technology, Surat</h3>
+                                                <i class="fa fa-link"><span>53 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-1.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Sneha Rao</h2>
+                                                <h3>Attended National Institute of Technology, Surat</h3>
+                                                <i class="fa fa-link"><span>23 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-2.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Shalini Kapoor</h2>
+                                                <h3>Attended Indian Institute of Technology, Kanpur</h3>
+                                                <i class="fa fa-link"><span>99 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-3.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Paresh Sinha</h2>
+                                                <h3>Attended National Institute of Technology, Bhopa</h3>
+                                                <i class="fa fa-link"><span>29 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-4.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Shruti Joshi</h2>
+                                                <h3>Attended National Institute of Technology, Jaipur</h3>
+                                                <i class="fa fa-link"><span>59 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="network-card">
+                                        <div class="card-details">
+                                            <img src="./images/user-5.png" alt="">
+                                            <div class="card-info">
+                                                <h2>Ehsan Kumar</h2>
+                                                <h3>Attended National Institute of Technology, Trichy</h3>
+                                                <i class="fa fa-link"><span>17 mutual connections</span></i>
+                                                <a href="#" class="connect-link"><i class="fa fa-user-plus"
+                                                        style="color: #1f71ff;"></i>Connect</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+        
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- ---------------custom javascript---------------- -->
+        <script src="./script.js"></script>
+</body>
+
+</html>

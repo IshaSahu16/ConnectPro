@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #5f5f5f;
+}
+
+a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+/* --------------------------------------navbar-start-------------------------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 15px;
+    display: block;
+}
+
+.navbar-center ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar-center ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.navbar-center ul li a img {
+    width: 30px;
+}
+
+.navbar-center ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;
+}
+
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active-link::after {
+    width: 100%;
+}
+
+.nav-profile-img {
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
+}
+
+.search-box {
+    background: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-box img {
+    width: 14px;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    border: 0;
+}
+
+.container {
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ---------left-sidebar--------- */
+.left-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+}
+
+.main-content {
+    flex-basis: 47%;
+}
+
+
+/* ----------------------------------------------navbar-end------------------------------------------- */
+/* ----------profile-drop-down-menu------------ */
+.profile-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.profile-menu {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h3 {
+    font-weight: 500;
+    margin-bottom: -7px;
+}
+
+.user-info a {
+    color: #c9dbf8;
+    font-size: 13px;
+}
+
+.profile-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0 10px;
+}
+
+.profile-menu-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.profile-menu-link p {
+    width: 100%;
+}
+
+.profile-menu-link img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* -------------------------------------profile-dropdown-end----------------------------------------------- */
+
+/* -----------------------------------------------------jobs-page-start-------------------------------------------- */
+
+.container {
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ---------left-sidebar--------- */
+.left-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+}
+
+.main-content-network {
+    flex-basis: 73%;
+}
+
+.sidebar-manage-network {
+    background: #fff;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.manage-network-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 13px 0;
+    cursor: pointer;
+}
+
+.manage-network-link h3 {
+    font-size: 1.03rem;
+    font-weight: 400;
+    /* margin-right: 6rem; */
+    padding: 0 15px;
+    color: #515151;
+}
+
+.icon-sidebar {
+    width: 2.2rem;
+}
+
+.post-a-job-link {
+    display: inline-block;
+    border: 1px solid #045be6;
+    border-radius: 65px;
+    padding: 12px 113px;
+    color: #045be6;
+    font-weight: 500;
+    margin: 1.3rem 0;
+    transition: 0.3s;
+}
+
+.post-a-job-link i {
+    color: #1f71ff;
+}
+
+.post-a-job span {
+    margin-left: 2px;
+}
+
+/* -----------left-sidebar-end--------------------- */
+
+/* -----------------main-content-start--------------------------- */
+.main-content {
+    flex-basis: 47%;
+}
+
+.suggested-jobs {
+    background: #fff;
+    padding: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.heading-jobs-box {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggest-heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.close-suggest-job {
+    border: none;
+    background: none;
+    color: #6a6a6a;
+    float: right;
+    cursor: pointer;
+}
+
+.suggested-job-links {
+    background: #fff;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 7px;
+}
+
+.suggested-job-links a {
+    display: inline-block;
+    border: 1px solid #045be6;
+    border-radius: 65px;
+    padding: 4px 20px;
+    color: #045be6;
+    font-weight: 500;
+}
+
+.suggested-job-links span {
+    padding-left: 7px;
+}
+
+.recommended-job {
+    background: #fff;
+    padding: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.recommended-heading {
+    margin-bottom: 11px;
+}
+
+.recommended-heading h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.recommended-heading p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* -------job-card--------- */
+.job-list {
+    list-style: none;
+}
+
+.job-card {
+    padding: 0.6rem 0;
+}
+
+.job-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.job-img img {
+    width: 4.5rem;
+    margin-right: 1rem;
+    z-index: 2;
+}
+
+.job-content h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #0062ffed;
+}
+
+.job-content h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6c6c6c;
+}
+
+.job-content p {
+    font-size: 14px;
+}
+
+.bookmark-btn {
+    margin-left: 13rem;
+}
+
+.recruiting {
+    margin-left: 5.5rem;
+}
+
+.recruiting span {
+    font-size: 14px;
+    color: #787878;
+    font-weight: 400;
+}
+
+.time {
+    padding-top: 10px;
+    margin-left: 5.5rem;
+}
+
+.time h3 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.break-card {
+    border-color: #fff;
+    margin: 10px 0;
+}
+
+#premium {
+    border-top: 4px solid #f8c77e;
+}
+
+/* --------------------------main-content-end-------------------------- */
+
+/* ---------------right-sidebar-start----------------------- */
+.right-sidebar {
+    flex-basis: 25%;
+    align-self: self-start;
+    position: sticky;
+    top: 73px;
+}
+
+.right-sidebar-details {
+    background: #fff;
+    padding: 20px 15px;
+    margin: 0 10px;
+}
+
+.right-sidebar-details h2 {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #3a3a3a;
+}
+
+.right-sidebar-details h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+.right-sidebar-details p {
+    padding: 15px 0;
+    font-size: 15px;
+    color: #434343;
+}
+
+.right-sidebar-details a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right-sidebar-details span {
+    padding-right: 10px;
+}
+
+.sidebar-useful-links {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.sidebar-useful-links a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+
+.copyright-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500
+}
+
+.copyright-msg img {
+    width: 18px;
+    margin-right: 4px;
+}
+
+/* ----------------------rigth-sidebar-end----------------------- */
+
+/* ------------------------------------------media query for navbar-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    .search-box {
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .search-box input {
+        width: 0;
+        padding: 0;
+    }
+
+    .navbar-center ul li a span {
+        display: none;
+    }
+
+    .navbar-center ul li a {
+        padding-right: 0;
+        margin: 5px;
+    }
+
+    .nav-profile-img {
+        width: 30px;
+    }
+
+    /* -------------------------------media query for home page-------------------- */
+    .container {
+        padding: 15px 3%
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+
+    .post-stats div {
+        margin: 2px 0;
+    }
+
+    .post-activity-link span {
+        display: none;
+    }
+
+    .post-activity-link img {
+        margin-right: 0;
+    }
+
+    /* -------------------------------------media query for profile page-------------------------------*/
+    .profile-main,
+    .profile-sidebar {
+        flex-basis: 100%;
+    }
+
+    .profile-container {
+        font-size: 14px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        margin-top: -50px;
+    }
+
+    .profile-description {
+        font-size: 14px;
+    }
+
+    .mutual-connection h3 {
+        font-size: 0.85rem;
+    }
+
+    #showMoreLink {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .sidebar-activity {
+        display: none;
+    }
+
+    .sidebar-activity.open-activity {
+        display: block;
+    }
+
+    .suggested-jobs {
+        margin-top: 1rem;
+    }
+
+    .post-a-job {
+        display: none;
+    }
+    #new-margin-job-box {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .main-content {
+        width: 24rem;
+    }
+
+    .bookmark-btn {
+        margin-left: 0;
+    }
+
+    #new-margin-job-box {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .main-content {
+        width: 22rem;
+    }
+
+    #no-network {
+        display: none;
+    }
+
+    #no-job-link {
+        display: none;
+    }
+
+    #new-margin-job-box {
+        margin-top: 1rem;
+    }
+}

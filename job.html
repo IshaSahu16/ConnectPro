@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <!-- -----------------google fonts link-------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- ---------------font awesome--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -------------custom css------------------ -->
+    <link rel="stylesheet" href="./job.css">
+    <!-- ------------------favicon------------------- -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="./index.html"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="./network.html"><img src="./images/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#" class="active-link"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="./messaging.html"><img src="./images/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="./notification.html"><img src="./images/notification.png"
+                            alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-3.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -----------profile-drop-down-menu----------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h3>Isha Sahu</h3>
+                        <a href="./profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------------navbar end----------------- -->
+
+    <div class="container">
+        <!-- -----------left-sidebar----------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-manage-network">
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-bookmark fa-2xl"></i>
+                    </div>
+                    <h3>My Job</h3>
+                </div>
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-file fa-2xl"></i>
+                    </div>
+                    <h3>Interview prep</h3>
+                </div>
+                <div class="manage-network-link">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-bell fa-2xl"></i>
+                    </div>
+                    <h3>Job Alerts</h3>
+                </div>
+                <div class="manage-network-link" id="no-network">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-clipboard-check fa-2xl"></i>
+                    </div>
+                    <h3>Skill Assessments</h3>
+                </div>
+                <div class="manage-network-link" id="no-network">
+                    <div class="icon-sidebar">
+                        <i class="fa fa-file fa-2xl"></i>
+                    </div>
+                    <h3>Resume Builder</h3>
+                </div>
+                <div class="manage-network-link" id="no-network">
+                    <div class="icon-sidebar">
+                        <i class="fa-regular fa-newspaper fa-2xl"></i>
+                    </div>
+                    <h3>Job Seeker Guidance</h3>
+                </div>
+                <div class="manage-network-link" id="no-network">
+                    <div class="icon-sidebar">
+                        <i class="fa-solid fa-gear fa-2xl"></i>
+                    </div>
+                    <h3>Application Settings</h3>
+                </div>
+            </div>
+        
+            <div class="post-a-job">
+                <a href="#" class="post-a-job-link">
+                    <i class="fa fa-pen-to-square"></i>
+                    <span>Post a job</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ----------------------------------main-content-------------------------- -->
+        <div class="main-content">
+            <div class="suggested-jobs">
+                <div class="heading-jobs-box">
+                    <h2 class="suggest-heading">Suggested job searches</h2>
+                    <button class="close-suggest-job" onclick="closeSuggestedJobs()"><i class="fa fa-circle-xmark fa-2xl style=" color:
+                            #6a6a6a;"></i></button>
+                </div>
+
+                <div class="suggested-job-links">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Interface Specialist</span></a>
+                </div>
+                <div class="suggested-job-links" id="no-job-link">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Lead User Interface
+                            Designer</span></a>
+                </div>
+                <div class="suggested-job-links" id="no-job-link">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>User Experience Designer</span></a>
+                </div>
+                <div class="suggested-job-links">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Web Front-End Developer</span></a>
+                </div>
+                <div class="suggested-job-links">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Ineraction Designer</span></a>
+                </div>
+                <div class="suggested-job-links">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Software Developer</span></a>
+                </div>
+                <div class="suggested-job-links">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass" id="no-job-link"></i><span>Android Development</span></a>
+                </div>
+            </div>
+
+            <section class="recommended-job" id="new-margin-job-box">
+                <div class="recommended-heading">
+                    <h2>Recommended for you</h2>
+                    <p>Based on your profile and search history</p>
+                </div>
+
+                <li class="job-list">
+
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>Google</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>2 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>Microsoft</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>5 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>Amazon</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>11 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>IndieFolio</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>12 hours ago</h3>
+                        </div>
+                    </div>
+                </li>
+            </section>
+            <section class="recommended-job" id="premium">
+                <div class="recommended-heading">
+                    <h2>Job's where you are a top applicant</h2>
+                    <p>Try the Premium Plan</p>
+                </div>
+
+                <li class="job-list">
+
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>IndieFolio</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>2 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>IndieFolio</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>2 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>IndieFolio</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>2 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>IndieFolio</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>2 hours ago</h3>
+                        </div>
+                    </div>
+                </li>
+            </section>
+            <section class="recommended-job" id="premium">
+                <div class="recommended-heading">
+                    <h2>Job's where you are a top applicant</h2>
+                    <p>Try the Premium Plan</p>
+                </div>
+
+                <li class="job-list">
+
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>Indie</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>11 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>Folio</h3>
+                                <p>India(Remote)</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>6 hours ago</h3>
+                        </div>
+                    </div>
+                    <hr class="break-card">
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-img">
+                                <img src="./images/user-1.png" alt="">
+                            </div>
+                            <div class="job-content">
+                                <h2>Freelance Graphic Designer</h2>
+                                <h3>Matrix</h3>
+                                <p>US</p>
+                            </div>
+                            <div class="bookmark-btn">
+                                <a href="#"><i class="fa fa-bookmark fa-xl" style="color: #737373;"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="recruiting">
+                            <i class="fa fa-bullseye"  style="color: #62bb23;"></i>
+                            <span>Actively Recruiting</span>
+                        </div>
+
+                        <div class="time">
+                            <h3>9 hours ago</h3>
+                        </div>
+                    </div>
+                </li>
+            </section>
+            
+        </div>
+
+        <!-- -----------------------------right-sidebar---------------------- -->
+        <div class="right-sidebar">
+            <div class="right-sidebar-details">
+                <h2>Job seeker guidance</h2>
+                <h3>Recommended based on your Activity</h3>
+                <p>Explore our curated guide of expert-led courses, such as how to improve your resume and grow your
+                    network, to help you land your next opportunity.</p>
+                <a href="#"><span>Show More</span><i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="./images/logo.png">
+                    <p>Linkedin &#169; 2022. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ---------------custom javascript---------------- -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <!-- --------------------google fonts link---------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- -----------custom css--------------- -->
+    <link rel="stylesheet" href="./profile.css">
+    <!-- ------------------favicon------------------- -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="./index.html"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="./network.html"><img src="./images/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="./job.html"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="./messaging.html"><img src="./images/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="./notification.html"><img src="./images/notification.png"
+                            alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-3.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -----------profile-drop-down-menu----------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h3>Isha Sahu</h3>
+                        <a href="./profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------------navbar end----------------- -->
+
+    <div class="container">
+        <!-- ------------profile-main---------- -->
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="./images/cover-pic.png" alt="" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./images/user-3.png" alt="" class="profile-pic">
+                    <h1>Isha Sahu</h1>
+                    <b>Web Developer @Asper | UI/UX Designer | C++ | CSE' 26 @UIT-RGPV</b>
+                    <p>Bhopal, India &middot; <a href="#">Contact Info</a></p>
+                    <div class="mutual-connection">
+                        <h3>430 connections</h3>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="./images/connect.png" alt="">Connect</a>
+                        <a href="#"><img src="./images/chat.png" alt="">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>👋 Hello! I'm Isha Sahu, a second-year Undergraduate in Computer Science and Engineering at UIT-RGPV.
+                    My
+                    passion for technology led me to pursue this field, and I am constantly seeking ways to develop my
+                    skills.
+                    <br>
+                    <br>
+                    🚀 My interests lie in Web Development, UI/UX designing, and Coding. I enjoy working on projects
+                    that
+                    challenge me to think creatively and develop solutions that are both innovative and functional.
+                    <br>
+                    <br>
+                    💡 Building websites and working on design projects that need me to consider the user experience are
+                    something I enjoy doing.
+                    <br>
+                    <br>
+                    💃 Outside of my academic pursuits, I am a Kathak Dancer. I have been learning Kathak for the past 6
+                    years, and it has taught me discipline, perseverance, and a deep appreciation for the art.
+                    <br>
+                    <br>
+                    🤝 I am a proactive learner and try to keep up with the most recent developments in the IT sector. I
+                    am
+                    always looking for new opportunities to collaborate, network, and learn.
+                    <br>
+                    <br>
+                    🤝🎉 Let's Connect!
+                </p>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="./images/devoic.jpeg" alt="">
+                    <div>
+                        <h3>Devoic</h3>
+                        <b>Graphic Designer &middot; Part-time</b>
+                        <b>Dec 2022 - Present</b>
+                        <p>DThrough my journey at Devoic, I discovered a platform that empowered my growth, offering an
+                            enriching learning experience that covered Graphic Design, Framer,
+                            Web Design, Mobile Application Design, Figma (Software).</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./images/asper.jpeg" alt="">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b>Asper &middot; Part-time</b>
+                        <b>Apr 2023 - Present</b>
+                        <p>At Asper, I had the opportunity to acquire proficiency in HTML, CSS, JavaScript, and UI/UX,
+                            as well as develop expertise in Firebase for real-time data management.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./images/mechbuddy.jpeg" alt="">
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <b>Mech-Buddy &middot; Internship</b>
+                        <b>8 Aug - 8 Sep &middot; 1 mon</b>
+                        <p>Within my position at Mech-Buddy, I embraced a multifaceted role. Utilizing Figma, I
+                            collaborated closely with skilled designers to completely revamp the website's UI.</p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all 7 experiences <img src="./images/right-arrow.png"
+                        alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="./images/college.png" alt="">
+                    <div>
+                        <h3>University Institute Of Technology</h3>
+                        <b>B.tech - Computer Science & Engineering</b>
+                        <b>2022 - 2026</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./images/high-school.jpeg" alt="">
+                    <div>
+                        <h3>Campion Public Hr. Sec School, Hoshangabad</h3>
+                        <b>PCM - 11th, 12th</b>
+                        <b>2020 - 2022</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./images/school.png" alt="">
+                    <div>
+                        <h3>St.Xavier's Sr. Sec. Co-Ed School, Bhopal</h3>
+                        <b>2020 - 2022</b>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Web Design</a>
+                <a href="#" class="skills-btn">Development</a>
+                <a href="#" class="skills-btn">Communication</a>
+                <a href="#" class="skills-btn">UI/UX</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">Javasvript</a>
+                <a href="#" class="skills-btn">Time-Management</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">Hindi</a>
+            </div>
+
+        </div>
+
+        <!-- -------------profile-sidebar--------------- -->
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web designing</p>
+                <div>
+                    <img src="./images/user-1.png">
+                    <img src="./images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="./images/user-3.png" alt="">
+                    <div>
+                        <h2>Samuel Tony</h2>
+                        <p>Head of Marketing at Alibaug</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./images/user-5.png" alt="">
+                    <div>
+                        <h2>Viaan Sharma</h2>
+                        <p>Head of Marketing at Alibaug</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./images/user-4.png" alt="">
+                    <div>
+                        <h2>Elizah Mathew</h2>
+                        <p>Head of Marketing at Alibaug</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./images/user-1.png" alt="">
+                    <div>
+                        <h2>Virat Mathur</h2>
+                        <p>Head of Marketing at Alibaug</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------profile-footer------------ -->
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="./images/logo.png">
+                <p>Linkedin &#169; 2022. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------custom javascript---------------- -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

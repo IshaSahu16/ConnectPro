@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <!-- -----------------google fonts link-------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- ---------------font awesome--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -------------custom css------------------ -->
+    <link rel="stylesheet" href="./messaging.css">
+    <!-- ------------------favicon------------------- -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+</head>
+
+<body>
+    <!-- ------------------------------navbar-------------------------------- -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="./index.html"><img src="./images/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="./network.html"><img src="./images/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="./job.html"><img src="./images/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#" class="active-link"><img src="./images/message.png" alt=""><span>Messaging</span></a>
+                </li>
+                <li><a href="./notification.html"><img src="./images/notification.png"
+                            alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-3.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -----------profile-drop-down-menu----------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h3>Isha Sahu</h3>
+                        <a href="./profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --------------------------------------message-page------------------------------------------- -->
+    <div class="container">
+
+        <!-- ------------left-sidebar------------- -->
+        <div class="left-sidebar">
+            <div class="messaging-heading">
+                <div class="msg-head">
+                    <h2>Messaging</h2>
+                    <div class="msg-icons">
+                        <i class="fa fa-ellipsis fa-xl"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                </div>
+
+                <div class="search-box" id="msg-search-box">
+                    <img src="./images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="msg-options">
+                    <div class="focused">
+                        <a href="#">Focused</a>
+                    </div>
+                    <div class="other">
+                        <a href="#">Other</a>
+                    </div>
+                </div>
+            </div>
+            <div class="focused-panel">
+                <ul class="msg-list-users">
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-4.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Smith Jones</h2>
+                            <p>Hey! Glad to be connected with you.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-3.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>David Anderson</h2>
+                            <p>Hi! Looking forward to networking with you.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-2.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Sarah Mitchell</h2>
+                            <p>Sarah here, excited to connect and share insights.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-1.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Michael Turner</h2>
+                            <p>Hello! let's explore new opportunities together!</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-5.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Amanda Johnson</h2>
+                            <p>Hello Amanda! Excited to learn from your expertise.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-3.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Laura Smith</h2>
+                            <p>Hi Laura! Let's connect and make valuable connections.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="other-panel">
+                <ul class="msg-list-users">
+                    <li class="msg-list-card">
+                        <div class="card-pic">
+                            <img src="./images/user-5.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Jennifer Lee</h2>
+                            <p>Connecting for professional growth.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                    <li class="msg-list-card" id="other-panel-no-border">
+                        <div class="card-pic">
+                            <img src="./images/user-3.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h2>Christopher Wilson</h2>
+                            <p>Eager to expand my professional network.</p>
+                        </div>
+                        <div class="card-date">
+                            <h3>2 Sep</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- -------------main-content---------------- -->
+        <div class="main-content">
+            <div class="msger-head-card">
+                <div class="msger-name-available">
+                    <div class="msger-name">
+                        <h2>Isha Sahu</h2>
+                    </div>
+                    <div class="msger-available">
+                        <i class="fa fa-circle-dot fa-2xs" style="color: #59992b;"></i>
+                        <h3>Available on mobile</h3>
+                    </div>
+                </div>
+                <div class="msger-icons">
+                    <i class="fa fa-ellipsis fa-lg"></i>
+                    <i class="fa fa-video fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="msger-chat">
+                <div class="chat-msg-card">
+                    <div class="date-notifi">
+                        <hr>
+                        <h3>AUG 27</h3>
+                        <hr>
+                    </div>
+                    <div class="chat-details">
+                        <div class="msger-chat-img">
+                            <img src="./images/user-4.png" alt="">
+                        </div>
+                        <div class="chat-content">
+                            <div class="chat-name-time">
+                                <h2>Smith Jones</h2>
+                                <h3>&middot; 11:25 PM</h3>
+                            </div>
+                            <div class="chat-msg">
+                                <h3>Hey! Thank you for connecting with me.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-msg-card">
+                    <div class="date-notifi">
+                        <hr>
+                        <h3>SEP 02</h3>
+                        <hr>
+                    </div>
+                    <div class="chat-details">
+                        <div class="msger-chat-img">
+                            <img src="./images/user-5.png" alt="">
+                        </div>
+                        <div class="chat-content">
+                            <div class="chat-name-time">
+                                <h2>Isha Sahu</h2>
+                                <h3>&middot; 09:25 PM</h3>
+                            </div>
+                            <div class="chat-msg">
+                                <h3>I am happy to connect.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-msg-card">
+                    <div class="date-notifi">
+                        <hr>
+                        <h3>SEP 07</h3>
+                        <hr>
+                    </div>
+                    <div class="chat-details">
+                        <div class="msger-chat-img">
+                            <img src="./images/user-4.png" alt="">
+                        </div>
+                        <div class="chat-content">
+                            <div class="chat-name-time">
+                                <h2>Smith Jones</h2>
+                                <h3>&middot; 12:05 PM</h3>
+                            </div>
+                            <div class="chat-msg">
+                                <h3>Congrats for your new job!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msger-box">
+                <div class="chat-box">
+                    <input type="text" class="no-outline" placeholder="Write your message here..........">
+                </div>
+            </div>
+            <div class="text-enhance-options">
+                <div class="enhance-options">
+                    <i class="fa-regular fa-image fa-lg"></i>
+                    <i class="fa fa-link fa-lg"></i>
+                    <i class="fa fa-font fa-lg"></i>
+                    <i class="fa-regular fa-face-smile fa-lg"></i>
+                </div>
+                <div class="msg-send-btn">
+                    <a href="#"><span>Send</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- -----------------right-sidebar-------------------- -->
+        <div class="right-sidebar">
+            <div class="ad-msg">
+                <div class="ad-img">
+                    <img src="./images/ad-msg.jpeg" alt="">
+                </div>
+                <div class="ld-premium">
+                    <h2>Linkedin <span>Premium</span></h2>
+                </div>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="./images/logo.png">
+                    <p>Linkedin &#169; 2022. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------custom javascript---------------- -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

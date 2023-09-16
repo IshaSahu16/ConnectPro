@@ -137,6 +137,12 @@ a {
 
 .sidebar-profile-box {
     background: #fff;
+    border-radius: 0.8rem;
+    border: 1px solid #dedede;
+}
+
+.sidebar-profile-box img{
+    border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .sidebar-profile-info {
@@ -208,6 +214,8 @@ a {
     background: #fff;
     padding: 5px 25px;
     margin: 12px 0;
+    border-radius: 0.8rem;
+    border: 1px solid #dedede;
 }
 
 .sidebar-activity h3 {
@@ -256,6 +264,8 @@ a {
 .sidebar-news {
     background: #fff;
     padding: 10px 25px;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .info-icon {
@@ -295,6 +305,8 @@ a {
     text-align: center;
     margin: 12px 0;
     font-size: 12px;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .sidebar-ad img {
@@ -361,6 +373,8 @@ a {
 
 .create-post {
     background: #fff;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .create-post-input {
@@ -417,6 +431,7 @@ a {
     color: #fff;
     border-top: 0;
     border-right: 0;
+    border-radius: 0 0 0.8rem 0;
 }
 
 .sort-by {
@@ -451,6 +466,8 @@ a {
     background: #fff;
     padding: 20px 25px 5px;
     margin: 5px 0 15px;
+    border-radius: 0.7rem;
+    border: 1px solid #e8e8e8;
 }
 
 .post-author {

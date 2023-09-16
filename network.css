@@ -294,6 +294,8 @@ a {
     text-align: center;
     margin: 12px 0;
     font-size: 12px;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .sidebar-ad img {
@@ -437,8 +439,9 @@ a {
     padding: 20px 25px;
     text-align: center;
     font-size: 12px;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
-
 .sidebar-manage-network h2 {
     color: #4d4d4d;
     text-align: start;
@@ -469,6 +472,8 @@ a {
 
 .invitations {
     background: #fff;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .heading-invite {
@@ -590,6 +595,8 @@ a {
     background: #fff;
     padding: 20px 25px 5px;
     margin: 5px 0 15px;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .add-network-list {

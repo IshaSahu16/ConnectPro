@@ -618,8 +618,15 @@ a {
     top: 73px;
 }
 
+.profile-cover{
+    border-radius: 0.7rem 0.7rem 0 0;
+    border: 1px solid #e8e8e8;
+}
+
 .profile-container {
     background: #fff;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .profile-container-inner {
@@ -692,6 +699,8 @@ a {
     background: #fff;
     padding: 20px 4% 30px;
     margin: 12px 0;
+    border-radius: 0.7rem;
+    border: 1px solid #e8e8e8;
 }
 
 .profile-description h2 {
@@ -774,12 +783,18 @@ a {
 .profile-sidebar .sidebar-ad {
     margin: 0;
 }
+.sidebar-ad{
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
+}
 
 .sidebar-people {
     background: #fff;
     padding: 15px 25px;
     margin: 12px 0;
     font-size: 12px;
+    border-radius: 0.8rem;
+    border: 1px solid #e8e8e8;
 }
 
 .sidebar-people h3 {

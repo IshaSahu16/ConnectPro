@@ -294,6 +294,8 @@ a {
     text-align: center;
     margin: 12px 0;
     font-size: 12px;
+    border-radius: 0.7rem;
+    border: 1px solid #e8e8e8;
 }
 
 .sidebar-ad img {
@@ -607,6 +609,8 @@ a {
 #sidebar-notifi {
     padding: 10px;
     margin: 12px 0;
+    border-radius: 0.5rem;
+    border: 1px solid #e8e8e8;
 }
 
 #sidebar-notifi h2 {
@@ -626,7 +630,8 @@ a {
     background: #fff;
     padding: 15px 15px;
     margin: 12px 0;
-
+    border-radius: 0.6rem;
+    border: 1px solid #e8e8e8;
 }
 
 .first-link {
@@ -652,6 +657,8 @@ a {
     background: #fff;
     padding: 7px 20px;
     margin: 12px 0;
+    border-radius: 0.7rem;
+    border: 1px solid #e8e8e8;
 }
 
 .notifi-msg {

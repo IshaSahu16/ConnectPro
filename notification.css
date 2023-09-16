@@ -134,10 +134,10 @@ a {
     top: 73px;
 }
 
-.sidebar-profile-box {
+ .sidebar-profile-box {
     background: #fff;
 }
-
+/*
 .sidebar-profile-info {
     padding: 0 25px;
 }
@@ -242,7 +242,7 @@ a {
     color: #045be6;
     display: inline-block;
     margin: 10px 0;
-}
+} */
 
 /* ----------right-sidebar------- */
 .right-sidebar {
@@ -363,7 +363,7 @@ a {
     background: #fff;
 }
 
-.create-post-input {
+/* .create-post-input {
     padding: 20px 25px 10px;
     display: flex;
     align-items: flex-start;
@@ -533,7 +533,7 @@ a {
 .post-activity-link img {
     width: 18px;
     margin-right: 8px;
-}
+} */
 
 /* ----------profile-drop-down-menu------------ */
 .profile-menu-wrap {
@@ -794,6 +794,7 @@ a {
     }
 } 
 
+/* -------------------------media-query-for-notifi-section---------------------- */
 @media only screen and (max-width: 452px){
     .notifi-msg{
         margin: 16px 0;

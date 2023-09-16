@@ -253,7 +253,7 @@ a {
     margin: 10px 0;
 }
 
-/* ----------right-sidebar------- */
+/* ---------------------------right-sidebar------------------ */
 .right-sidebar {
     flex-basis: 25%;
     align-self: self-start;
@@ -366,7 +366,7 @@ a {
     margin-right: 4px;
 }
 
-/* ---------main-content----------- */
+/* -------------------------main-content---------------------- */
 .main-content {
     flex-basis: 47%;
 }
@@ -552,7 +552,7 @@ a {
     margin-right: 8px;
 }
 
-/* ----------profile-drop-down-menu------------ */
+/* ---------------------profile-drop-down-menu---------------------- */
 #showMoreLink {
     display: none;
 }

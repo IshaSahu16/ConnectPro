@@ -126,7 +126,7 @@ a {
     justify-content: space-between;
 }
 
-/* ---------left-sidebar--------- */
+/* ---------------------------left-sidebar--------------------------- */
 .left-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
@@ -138,7 +138,7 @@ a {
     background: #fff;
 }
 
-.sidebar-profile-info {
+/* .sidebar-profile-info {
     padding: 0 25px;
 }
 
@@ -242,7 +242,7 @@ a {
     color: #045be6;
     display: inline-block;
     margin: 10px 0;
-}
+} */
 
 /* ----------right-sidebar------- */
 .right-sidebar {
@@ -330,7 +330,7 @@ a {
     margin: 20px auto 10px;
 }
 
-.sidebar-useful-links {
+/* .sidebar-useful-links {
     padding: 15px 25px;
     text-align: center;
 }
@@ -353,7 +353,7 @@ a {
 .copyright-msg img {
     width: 18px;
     margin-right: 4px;
-}
+} */
 
 /* ---------main-content----------- */
 /* .main-content {
@@ -435,6 +435,7 @@ a {
     flex-basis: 73%;
 }
 
+/* ------------------left-sidebar------------------- */
 .sidebar-manage-network {
     background: #fff;
     padding: 20px 25px;
@@ -497,7 +498,7 @@ a {
     font-weight: 400;
 }
 
-/* ---------invite -list------ */
+/* -----------------------invite -list------------------------- */
 .invite-list {
     background-color: transparent;
     list-style-type: none;
@@ -802,7 +803,8 @@ a {
     .sidebar-activity.open-activity {
         display: block;
     }
-
+    
+    /* --------------------------media-query-for-network-page---------------------- */
     .main-content-network {
         width: 35rem;
     }

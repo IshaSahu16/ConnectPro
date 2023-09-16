@@ -544,7 +544,6 @@ a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
-    border-radius: 0.6rem;
 }
 
 .profile-menu-wrap.open-menu {
@@ -556,7 +555,6 @@ a {
     color: #fff;
     padding: 20px;
     margin: 10px;
-    border-radius: 0.6rem;
 }
 
 .user-info {
